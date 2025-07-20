@@ -41,7 +41,7 @@ After=network.target
 [Service]
 User=$MC_USER
 WorkingDirectory=$VANILLA_DIR
-ExecStart=/usr/bin/java -Xmx6G -Xms2G -jar server.jar nogui --port $MC_PORT
+ExecStart=/usr/bin/java -Xmx8G -Xms4G -jar server.jar nogui --port $MC_PORT
 Restart=on-failure
 
 [Install]
