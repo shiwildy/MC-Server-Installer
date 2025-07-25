@@ -17,7 +17,7 @@ echo "[3/6] Download minecraft forge server 1.21.8-58.0.1"
 wget -O forge-installer.jar 'https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.8-58.0.1/forge-1.21.8-58.0.1-installer.jar'
 
 echo "[4/6] Install minecraft server & configure server"
-java -jar forge-installer.jar --installServer .
+java -jar forge-installer.jar --installServer . > /dev/null 2>&1
 rm -rf forge-installer.jar # remove installer file
 rm -rf *log *bat *sh
 echo "eula=true" > eula.txt
